@@ -16,12 +16,12 @@ cat <<EOF > ~/config.json
     },
     "inbounds": [
         {
-            "port": '$PORT',
+            "port": $PORT,
             "protocol": "$type",
             "settings": {
                 "clients": [
                     {
-                        "password": "$id",
+                        "password": "$id"
                     }
                 ],
                 "decryption": "none"
