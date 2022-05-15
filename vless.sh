@@ -1,18 +1,6 @@
 wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/web
 chmod +x ./web
 
-if [[ -z $type ]]; then
-    type="trojan"
-fi
-
-if [[ $type == "vmess" ]]; then
-    passid="id"
-elif [[ $type == "vless" ]]; then
-    passid="id"
-elif [[ $type == "trojan" ]]; then
-    passid="password"
-fi
-
 if [[ -z $id ]]; then
     id="1eb6e917-774b-4a84-aff6-b058577c60a5"
 fi
@@ -25,11 +13,11 @@ cat <<EOF > ~/config.json
     "inbounds": [
         {
             "port": $PORT,
-            "protocol": "$type",
+            "protocol": "trojan",
             "settings": {
                 "clients": [
                     {
-                        "$passid": "$id"
+                        "id": "$id"
                     }
                 ],
                 "decryption": "none"
