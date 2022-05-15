@@ -1,4 +1,5 @@
-curl -Ok https://raw.githubusercontent.com/wgp-2020/AX/main/web && chmod +x ./web
+wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/web
+chmod +x ./web
 
 echo '{
     "log": {
