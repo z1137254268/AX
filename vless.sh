@@ -13,11 +13,12 @@ cat <<EOF > ~/config.json
     "inbounds": [
         {
             "port": $PORT,
-            "protocol": "trojan",
+            "protocol": "vless",
             "settings": {
                 "clients": [
                     {
-                        "id": "$id"
+                        "id": "$id",
+                        "flow": "xtls-rprx-direct"
                     }
                 ],
                 "decryption": "none"

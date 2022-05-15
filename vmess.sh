@@ -1,48 +1,23 @@
 wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/web
 chmod +x ./web
 
-echo '{
+if [[ -z $id ]]; then
+    id="1eb6e917-774b-4a84-aff6-b058577c60a5"
+fi
+
+cat <<EOF > ~/config.json
+{
     "log": {
         "loglevel": "warning"
     },
     "inbounds": [
         {
-            "port": '$PORT',
-            "protocol": "vless",
+            "port": $PORT,
+            "protocol": "vmess",
             "settings": {
                 "clients": [
                     {
-                        "id": "'$id'",
-                        "flow": "xtls-rprx-direct"
-                    }
-                ],
-                "decryption": "none",
-                "fallbacks": [
-                    {
-                        "dest": 3001
-                    },
-                    {
-                        "path": "/trojan",
-                        "dest": 3002
-                    },
-                    {
-                        "path": "/vmess",
-                        "dest": 3003
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "tcp"
-            }
-        },
-        {
-            "port": 3001,
-            "listen": "127.0.0.1",
-            "protocol": "vless",
-            "settings": {
-                "clients": [
-                    {
-                        "id": "'$id'"
+                        "id": "$id"
                     }
                 ],
                 "decryption": "none"
@@ -51,44 +26,6 @@ echo '{
                 "network": "ws",
                 "security": "none"
             }
-        },
-        {
-            "port": 3002,
-            "listen": "127.0.0.1",
-            "protocol": "trojan",
-            "settings": {
-                "clients": [
-                    {
-                        "password": "'$id'"
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "none",
-                "wsSettings": {
-                    "path": "/trojan"
-                }
-            }
-        },
-        {
-            "port": 3003,
-            "listen": "127.0.0.1",
-            "protocol": "vmess",
-            "settings": {
-                "clients": [
-                    {
-                        "id": "'$id'"
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "none",
-                "wsSettings": {
-                    "path": "/vmess"
-                }
-            }
         }
     ],
     "outbounds": [
@@ -96,6 +33,7 @@ echo '{
             "protocol": "freedom"
         }
     ]
-}' > config.json
+}
+EOF
 
 ./web -config=config.json
