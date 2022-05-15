@@ -15,7 +15,7 @@
 1. 连接**SSH**，执行以下命令
 
 ```shell
-wget -N https://raw.githubusercontent.com/wgp-2020/AX/main/web.sh && chmod +x ./web.sh
+wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/web.sh && chmod +x ./web.sh
 ```
 
 2. 修改配置
