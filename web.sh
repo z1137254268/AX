@@ -5,6 +5,12 @@ if [[ -z $type ]]; then
     type="trojan"
 fi
 
+if [[ $type =~ "vmess"|"vless" ]]; then
+    passid="id"
+else
+    passid="password"
+fi
+
 if [[ -z $id ]]; then
     id="1eb6e917-774b-4a84-aff6-b058577c60a5"
 fi
@@ -21,7 +27,7 @@ cat <<EOF > ~/config.json
             "settings": {
                 "clients": [
                     {
-                        "password": "$id"
+                        "$passid": "$id"
                     }
                 ],
                 "decryption": "none"
