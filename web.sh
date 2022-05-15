@@ -9,7 +9,7 @@ if [[ $type == "vmess" ]]; then
     passid="id"
 elif [[ $type == "vless" ]]; then
     passid="id"
-else
+elif [[ $type == "trojan" ]]; then
     passid="password"
 fi
 
