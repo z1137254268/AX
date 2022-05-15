@@ -14,10 +14,10 @@
 
 1. 连接**SSH**，执行以下命令
 
-   ```sh
-   curl -Oks https://raw.githubusercontent.com/wgp-2020/AX/main/web.sh && chmod +x ./web.sh
-   ```
+```shell
+wget -N https://raw.githubusercontent.com/wgp-2020/AX/main/web.sh && chmod +x ./web.sh
+```
 
 2. 修改配置
 
-   ![image](https://user-images.githubusercontent.com/70625361/168480560-7012e386-3ebc-4fa6-961c-db6ca8b4cd68.png)
+![image](https://user-images.githubusercontent.com/70625361/168480560-7012e386-3ebc-4fa6-961c-db6ca8b4cd68.png)
