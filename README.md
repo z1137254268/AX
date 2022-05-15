@@ -20,7 +20,7 @@
 wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/vmess.sh && chmod +x ./vmess.sh
 ```
 
-### vmess
+### vless
 
 ```shell
 wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/vless.sh && chmod +x ./vless.sh
