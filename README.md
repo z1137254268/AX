@@ -14,8 +14,22 @@
 
 1. 连接**SSH**，执行以下命令
 
+### vmess
+
 ```shell
-wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/web.sh && chmod +x ./web.sh
+wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/vmess.sh && chmod +x ./vmess.sh
+```
+
+### vmess
+
+```shell
+wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/vless.sh && chmod +x ./vless.sh
+```
+
+### trojan
+
+```shell
+wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/trojan.sh && chmod +x ./trojan.sh
 ```
 
 2. 修改配置
