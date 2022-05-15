@@ -17,8 +17,7 @@ cat <<EOF > ~/config.json
             "settings": {
                 "clients": [
                     {
-                        "id": "$id",
-                        "flow": "xtls-rprx-direct"
+                        "id": "$id"
                     }
                 ],
                 "decryption": "none"
