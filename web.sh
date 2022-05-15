@@ -5,7 +5,9 @@ if [[ -z $type ]]; then
     type="trojan"
 fi
 
-if [[ $type =~ "vmess"|"vless" ]]; then
+if [[ $type == "vmess" ]]; then
+    passid="id"
+elif [[ $type == "vless" ]]; then
     passid="id"
 else
     passid="password"
