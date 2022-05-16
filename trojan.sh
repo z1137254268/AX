@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm -f web config.json
 wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/web
 chmod +x ./web
 
