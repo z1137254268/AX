@@ -1,4 +1,4 @@
-# Vless / Vmess / 木马
+# Alwaysdata 搭建 vmess / vless / trojan 节点
 
 - 服务器类型： **trojan**（默认）
 - 地址：**名称.alwaysdata.net**
@@ -35,3 +35,7 @@ wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/trojan.sh && chmod
 2. 修改配置
 
 ![image](https://user-images.githubusercontent.com/70625361/168480560-7012e386-3ebc-4fa6-961c-db6ca8b4cd68.png)
+
+## 感谢列表
+
+原作者项目：https://github.com/wgp-2020/AX
