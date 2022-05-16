@@ -1,3 +1,5 @@
+#!/bin/bash
+
 wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/web
 chmod +x ./web
 
