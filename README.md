@@ -1,6 +1,6 @@
 # Alwaysdata 搭建 vmess / vless / trojan 节点
 
-搭建教程：待更新
+搭建教程：https://owo.misaka.rest/alwaysdata-xray/
 
 # 请勿在常用的账号部署本项目，避免封号！
 
