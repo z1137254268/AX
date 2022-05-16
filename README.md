@@ -1,5 +1,7 @@
 # Alwaysdata 搭建 vmess / vless / trojan 节点
 
+# 请勿在常用的账号部署本项目，避免封号！
+
 ## 搭建步骤
 
 1. 连接**SSH**，执行以下命令
