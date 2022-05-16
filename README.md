@@ -1,5 +1,7 @@
 # Alwaysdata 搭建 vmess / vless / trojan 节点
 
+搭建教程：待更新
+
 # 请勿在常用的账号部署本项目，避免封号！
 
 ## 搭建步骤
@@ -24,9 +26,7 @@ wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/vless.sh && chmod 
 wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/trojan.sh && chmod +x ./trojan.sh
 ```
 
-2. 修改配置
-
-![image](https://user-images.githubusercontent.com/70625361/168480560-7012e386-3ebc-4fa6-961c-db6ca8b4cd68.png)
+2. 修改网站空间配置
 
 ## 客户端配置
 
